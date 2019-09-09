@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 /***
  * 消除过期的对象引用
  * WeakHashMap的特点是，当除了自身有对key的引用外，
- * 此key没有其他引用那么此map会自动丢弃此值
+ * 此key没有其他引用那么此map会自动丢弃此值(只有自己持有)
  */
 public class Sixth {
     //测试weakHashMap与hashMap的区别

@@ -33,5 +33,6 @@ class Sun extends Father{
     @Override
     protected void finalize() throws Throwable {
         System.out.println("Sun finalize by the finalize method");
+//        super.finalize();
     }
 }
