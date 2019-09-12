@@ -1,5 +1,7 @@
 package com.xwj.chapter3;
 
+import java.util.Objects;
+
 /**
  * 覆盖equals须遵循通用约定
  */
@@ -103,5 +105,17 @@ public class Eighth {
 //        System.out.println(c1.equals(p));//Point与ColorPoint比较忽略了颜色信息
 //        System.out.println(p.equals(c2));
 //        System.out.println(c1.equals(c2));//ColorPoint相互比较不会忽略颜色信息
+    }
+}
+class EqualsDemo{
+    private int id;
+    private String name;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;//判断是否相同对象
+        if (!(o instanceof EqualsDemo)) return false;//判断是否正确类型，也可考虑getClass
+        EqualsDemo that = (EqualsDemo) o;//类型转换
+        return id == that.id &&//具体比较逻辑
+                Objects.equals(name, that.name);
     }
 }
