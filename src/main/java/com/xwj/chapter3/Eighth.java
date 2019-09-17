@@ -1,5 +1,7 @@
 package com.xwj.chapter3;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -87,7 +89,7 @@ class ColorPoint2{
     }
 }
 public class Eighth {
-    public static void main(String[] args) {
+    public  static void main(String[] args) {
         //对称性验证
 //        CaseInsensitiveString cis=new CaseInsensitiveString("Polish");
 //        String s="polish";
