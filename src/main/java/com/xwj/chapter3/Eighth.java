@@ -68,7 +68,7 @@ class ColorPoint extends Point{//无法在扩展时既增加组件又保留equal
         return super.equals(obj) && p.color.equals(color);//是ColorPoint
     }
 }
-//用复合代替继承
+//想要扩展类的字段时用复合代替继承
 class ColorPoint2{
     private final Point point;
     private final String color;

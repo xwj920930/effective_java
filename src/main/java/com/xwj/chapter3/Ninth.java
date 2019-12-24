@@ -6,6 +6,7 @@ import java.util.Objects;
 
 /**
  * 覆盖equals总是覆盖hashcode
+ * 复写equals之所以还要复写hashcode是因为被复写的类可能会被map或者set当做key，此时需要hashcode作为评判标准
  */
 class PhoneNumber{
     private final short areaCode;
