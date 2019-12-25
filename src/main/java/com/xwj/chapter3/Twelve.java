@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 考虑实现comparable接口
  * 1.主要用于排序
- * 2.Collections.sort(Ts)，T必须实现Comparable接口,重写compareTo方法
+ * 2.Collections.sort(T)，T必须实现Comparable接口,重写compareTo方法
  */
 class Person implements Comparable<Person>{
     private int age;
